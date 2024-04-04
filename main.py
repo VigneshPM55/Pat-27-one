@@ -5,3 +5,7 @@ def Vignesh(a,b):
 
 def main():
     return "Vignesh"
+
+if __name__ == "__main__":
+    main()
+    
