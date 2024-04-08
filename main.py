@@ -15,3 +15,33 @@ print("Each vowel count=")
 for vowel,count in counts.items():
     print(vowel,":",count)       
             
+
+
+height = 20
+for i in range (1,height+1):
+    print(*range(1,i+1))
+    
+    
+def remove_vowels(input_string):
+    vowels = 'aeiouAEIOU'
+    answer = ''
+    for char in input_string:
+        if char not in vowels:
+            answer +=char
+    return answer
+input_string = input("Write here:")
+no_vowels = remove_vowels(input_string)
+print("String without any vowels:", no_vowels)
+
+
+def unique_characters_present(input_string):
+    unique_characters = set(input_string)
+    return unique_characters
+input_string = input("Write a string:")
+unique_characters = unique_characters_present(input_string)
+print("Unique characters are",unique_characters)
+
+def palindrome(input_string):
+    return input_string == input_string[::-1]
+input_string = input("Write a string:")
+print (palindrome(input_string))
